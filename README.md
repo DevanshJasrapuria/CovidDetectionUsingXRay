@@ -1,4 +1,4 @@
-### CovidDetectionUsingXRay
+# CovidDetectionUsingXRay
 
 ##	ABSTRACT	
 Coronavirus disease 2019 (COVID-2019), which first appeared in Wuhan, China in 2019 and has swiftly spread over the world since the beginning of 2020, has infected millions of people and killed a large number of them. The fight against the COVID-19 pandemic has emerged as one of the most promising issues in global healthcare. COVID-19 cases must be accurately and quickly diagnosed in order to receive proper medical treatment and limit the pandemic. After that, the virus spread all over the world, with over 4.7 million confirmed cases and over 315000 deaths as of the time of writing this report. Radiologists can employ machine learning algorithms developed on radiography pictures as a decision support mechanism to help them speed up the diagnostic process. 
@@ -16,19 +16,19 @@ X-rays or scans produce an image of the organs and structures in the chest. X-ra
 Chest X-rays can be a great way to detect covid-19 virus since, chest x-rays are a fast and inexpensive test that may potentially diagnose COVID-19, the disease caused by the novel coronavirus. However, chest imaging is not a first-line test for COVID-19 due to low diagnostic accuracy and confounding with other viral pneumonias. Recent research using deep learning may help overcome this issue as convolutional neural networks (CNNs) have demonstrated high accuracy of COVID-19 diagnosis at an early stage.
 The discovery of X-rays and the invention of CT represented major advances in medicine. X-ray imaging exams are recognized as a valuable medical tool for a wide variety of examinations and procedures. They are used to noninvasively and painlessly help to diagnose disease and monitor therapy; support medical and surgical treatment planning; and guide medical personnel as they insert catheters, stents, or other devices inside the body, treat tumors, or remove blood clots or other blockages.
 
-# Problem Statement
+### Problem Statement
 
 Covid-19 is a big issue around the world right now, affecting millions of individuals. To combat this outbreak, scientists and doctors have opted to adopt real time reverse transcription polymerase chain reaction (RT-PCR) as the only way to detect the virus. However, because RT-PCR isn't available to everyone and can take up to 24 hours to produce results, we use CXR (Chest X-ray) to detect Covid-19, since this procedure is both inexpensive and effective. As a result, we're working on a project to train a CNN model that can detect the presence of Covid 19 using only X-Ray images.
 
 
-# Objectives 
+### Objectives 
 
 Collect the statistics from different sources and train a CNN model to predict whether the provided image is Covid-19 positive or not.
 Analyze the data and compare the final results of Covid-19, based on the collected data.
 Estimate whether chest imaging is accurate enough to diagnose COVID-19 in people with suspected infection.
 
 
-# Scope of Project 
+### Scope of Project 
 
 
 The areas of study covered under this project are data collection, data analysis, machine learning algorithms, image detection, and data visualization. Data will be collected through publicly available sources like Github and Kaggle. Build a CNN models from scratch to find the best possible accuracy to predict whether the given X-ray image is Covid-19 positive or not. We then visualize the results by using libraries like matplotlib and seaborn to better explain our findings.
@@ -36,7 +36,7 @@ The areas of study covered under this project are data collection, data analysis
 
 ## BACKGROUND DETAILS
 
-# Literature Review/Related Work:
+### Literature Review/Related Work:
 Anam-Net, a lightweight CNN based on anamorphic depth embedding, is proposed to segment abnormalities in COVID-19 chest CT images. When compared to the state-of-the-art UNet (or its variations), the suggested Anam-Net has 7.8 times less parameters, making it lightweight and capable of generating inferences in mobile or resource-constrained (point-of-care) systems.[1]
 
 Another work presents a modified MobileNet architecture for COVID-19 CXR image classification and a modified ResNet design for CT image classification to overcome these issues. In addition, utilising CT scans, the suggested modified ResNet is used to classify COVID-19, non-COVID-19 infections, and normal controls.[2]
@@ -53,12 +53,12 @@ In this research (CXRs). A CNN is employed to extract features in the proposed m
 The data augmentation and CNN hyperparameters for identifying COVID-19 from CXRs are optimized in an article in terms of validation accuracy. The accuracy of common CNN architectures such as the Visual Geometry Group network (VGG-19) and the Residual Neural Network (ResNet-50) is improved by 11.93 percent and 4.97 percent, respectively, thanks to this modification. The CovidXrayNet model was subsequently suggested, which is based on EfficientNet-B0 and our optimization findings. CovidXrayNet was tested on two datasets: the COVIDcxr dataset (960 CXRs) that we developed and the benchmark COVIDx dataset (15,496 CXRs). [10]
 
 ## SYSTEM DESIGN AND METHODOLOGY
-# System Architecture
+### System Architecture
 
 The ER diagram of our proposed project model is as follows:
 
 						
-# Development Environment.
+### Development Environment.
 
 Hardware:
 Central Processing Unit (CPU) — Intel Core i5 6th Generation processor or higher.
@@ -91,12 +91,13 @@ Testing Algorithms: Here we test various machine learning algorithms and try to 
 
 ## IMPLEMENTATION AND RESULTS
 
-# 4.1. Modules/Classes of Implemented Project
+### 4.1. Modules/Classes of Implemented Project
 The use of Convolutional Nueral Network was decided upon because:
 CNN are very satisfactory at picking up on design in the input image, such as lines, gradients, circles, or even eyes and faces.
 CNN contains many convolutional layers assembled on top of each other, each one competent of recognizing more sophisticated shapes.
 The construction of a convolutional neural network is a multi-layered feed-forward neural network, made by assembling many unseen layers on top of each other in a particular order.
-# 4.2. Implementation Detail
+
+### 4.2. Implementation Detail
  
 The first step was to get datasets and upload it on Dropbox. We got the dataset from Kaggle and Github of both Covid-19 positive and Covid-19 negative X-ray images. We then uploaded them to Dropbox and created a link to be used in the Google Colab notebook.
 
@@ -151,7 +152,7 @@ We apply this to both  test set and the validation set. and then finally train t
 
 
 
-# 4.3. Results and Discussion
+### 4.3. Results and Discussion
 	
 The various accuracies and losses that we get using various number of filtering layers is as follows:
 
